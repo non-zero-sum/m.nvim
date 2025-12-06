@@ -1,0 +1,10 @@
+MD004:
+  style: dash
+MD007:
+  # spaces for indent
+  indent: 2
+  start_indented: false
+MD013: false
+MD029:
+#ordered list style
+  style: ordered
