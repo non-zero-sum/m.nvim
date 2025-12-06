@@ -17,3 +17,7 @@ Each plugin configuration is in its own file to avoid accidental duplication.
 - [nvim-lint](./nvim-lint.lua) - sets `markdownlint-cli2` to be the default linter for `markdown`
 - [lspconfig](./lspconfig.lua) - sets formatting options for `toml` files
 - [treesitter](./treesitter.lua) - adds additional languages (I'm not entirely sure this is necessary)
+
+## Utilities
+
+- [kulala](./kulala.lua) - provides http client (via curl). Keys prefixed to `<localleader>r`
