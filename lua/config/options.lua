@@ -5,3 +5,5 @@
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
+-- have not less than 10 lines above/below the cursor while moving up/down
+vim.opt.scrolloff = 10
