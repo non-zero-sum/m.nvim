@@ -17,6 +17,23 @@ Each plugin configuration is in its own file to avoid accidental duplication.
 - [nvim-lint](./nvim-lint.lua) - sets `markdownlint-cli2` to be the default linter for `markdown`
 - [lspconfig](./lspconfig.lua) - sets formatting options for `toml` files
 - [treesitter](./treesitter.lua) - adds additional languages (I'm not entirely sure this is necessary)
+- [neotest](./neotest.lua) - testing framework
+
+### Extras
+
+The following extras have been installed via `LazyExtras`:
+
+- `mini-surround` - support for adding, replacing, and removing surrounds (e.g. quotes)
+- `mini-hipatterns` - colour hints for CSS
+- `test-core` - support for neotest and async IO
+- Language support:
+  - `json`
+  - `markdown`
+  - `python`
+  - `rust`
+  - `toml`
+  - `vue`
+  - `yaml`
 
 ## Utilities
 
