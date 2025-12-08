@@ -12,3 +12,6 @@ vim.keymap.set("i", "˚", "<esc><cmd>m .-2<cr>==gi", { desc = "Move up" })
 
 vim.keymap.set("v", "∆", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = "Move down" })
 vim.keymap.set("v", "˚", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move up" })
+
+-- color cycler
+vim.keymap.set("n", "<leader>cc", ":CccConvert<cr>", { desc = "Cycle colorspace" })
