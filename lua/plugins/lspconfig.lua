@@ -3,7 +3,7 @@ return {
   opts = {
     servers = {
       taplo = {
-        evenBetterToml = {
+        settings = {
           schema = { enabled = true },
           formatter = {
             reorderKeys = true,
