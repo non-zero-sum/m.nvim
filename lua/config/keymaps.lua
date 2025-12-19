@@ -15,3 +15,6 @@ vim.keymap.set("v", "˚", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>g
 
 -- color cycler
 vim.keymap.set("n", "<leader>cc", ":CccConvert<cr>", { desc = "Cycle colorspace" })
+
+-- jq
+vim.keymap.set("n", "<leader>jq", ":lua require('jq').run()<cr>", { desc = "jq interface" })
