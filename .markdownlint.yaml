@@ -3,8 +3,11 @@ MD004:
 MD007:
   # spaces for indent
   indent: 2
+  # don't indent the fist level of lists
   start_indented: false
 MD013: false
 MD029:
-#ordered list style
+  #ordered list style
   style: ordered
+MD060:
+  style: compact
