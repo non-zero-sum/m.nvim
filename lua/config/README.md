@@ -4,6 +4,7 @@
 - [Lazy](#lazy)
 - [Key maps](#key-maps)
 - [Options](#options)
+- [Auto commands](#auto-commands)
 
 <!-- mtoc-end -->
 ## Lazy
@@ -16,4 +17,8 @@ Configures key maps for moving lines of text up and down in normal, insert and v
 
 ## Options
 
-Sets soft-wrap and line breaks
+Sets soft-wrap, line breaks, scroll-off (how much space above/below the cursor to keep in view), and sets the python `lsp` to `basedpyright`
+
+## Auto commands
+
+Adds a `VimLeave` triggered command (i.e. exit) to close any open `LivePreview` server

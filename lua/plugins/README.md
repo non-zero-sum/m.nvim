@@ -1,21 +1,18 @@
 # Plugin configurations
-<!-- mtoc-start -->
-
-- [Look and feel](#look-and-feel)
-- [Language support](#language-support)
-  - [LSP configurations](#lsp-configurations)
-  - [Extras](#extras)
-- [Utilities](#utilities)
-
-<!-- mtoc-end -->
+>
 > All files in this folder are additional to the LazyVim kick-starter.
 
 Each plugin configuration is in its own file to avoid accidental duplication.
 
 ## Look and feel
 
-- [Snacks](./snacks.lua) - removes unused options from the default LazyVim splash and adds the `m-` header
+- [Snacks](./snacks.lua)
+  - removes unused options from the default LazyVim splash
+  - adds the `m-` header to the splash
+  - sets explorer to show hidden and ignored files by default
 - [TokyoNight](./tokyonight.lua) - sets the style to `night` and adds transparency
+- [render-markdown](./render-markdown.lua) - sets rendering on for checkboxes
+- [TODO comments](./todo-comments.lua) - sets highlighting on even when TODO is not in a comment
 
 ## Language support
 
@@ -61,3 +58,8 @@ The following extras have been installed via `LazyExtras`:
 - [kulala](./kulala.lua) - provides http client (via curl). Keys prefixed to `<localleader>r`
 - [`oklch` color picker](./oklch-color-picker.lua) - a colour picker and in-line preview for CSS colours
 - [`jq`](./jq.lua) - a `jq` interface for parsing large `json` files
+- [live-preview](./live-preview.lua) - provides browser preview for HTML (incl. CSS & JavaScript), and Markdown
+
+## Disabled plugins
+
+- `markdown-preview` - prefer `live-preview`
