@@ -3,6 +3,7 @@ return {
   depdendencies = {
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
-    "grapp-dev/nui-componentns.nvim",
+    "grapp-dev/nui-components.nvim",
   },
+  { "grapp-dev/nui-components.nvim" },
 }
