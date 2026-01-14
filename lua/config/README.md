@@ -13,7 +13,11 @@ The only modification made to the LazyVim starter is to remove `habamax` as this
 
 ## Key maps
 
-Configures key maps for moving lines of text up and down in normal, insert and visual modes.
+Configures key maps for:
+
+- moving lines of text up and down
+- starting `jq` and `yq` for the current buffer
+- save and close (buffer)
 
 ## Options
 

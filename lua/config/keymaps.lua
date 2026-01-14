@@ -16,5 +16,16 @@ vim.keymap.set("v", "˚", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>g
 -- color cycler
 vim.keymap.set("n", "<leader>cc", ":CccConvert<cr>", { desc = "Cycle colorspace" })
 
--- jq
-vim.keymap.set("n", "<leader>jq", ":lua require('jq').run()<cr>", { desc = "jq interface" })
+-- jq and yq
+vim.keymap.set("n", "<leader>jq", function()
+  require("jq").run()
+end, { desc = "parse json" })
+vim.keymap.set("n", "<leader>yq", function()
+  require("jq").run({ commands = { { command = "yq", filetype = "yaml", arguments = "-r" } } })
+end, { desc = "parse yaml" })
+
+-- save and exit
+vim.keymap.set("n", "<D-s>", "<cmd>w<cr>", { desc = "save" })
+vim.keymap.set("n", "<D-x>", function()
+  require("snacks").bufdelete()
+end, { desc = "close buffer" })
