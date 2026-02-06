@@ -29,3 +29,6 @@ vim.keymap.set("n", "<D-s>", "<cmd>w<cr>", { desc = "save" })
 vim.keymap.set("n", "<D-x>", function()
   require("snacks").bufdelete()
 end, { desc = "close buffer" })
+
+-- sent changed content to the black hole register
+vim.keymap.set("n", "c", '"_c')

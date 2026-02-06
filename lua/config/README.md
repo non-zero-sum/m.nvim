@@ -18,6 +18,7 @@ Configures key maps for:
 - moving lines of text up and down
 - starting `jq` and `yq` for the current buffer
 - save and close (buffer)
+- send change (e.g. `ciw` change in word) events to the black hole register so that previously copied things can be pasted in
 
 ## Options
 
