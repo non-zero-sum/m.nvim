@@ -4,6 +4,10 @@
 
 Each plugin configuration is in its own file to avoid accidental duplication.
 
+## Workflow
+
+- [hard time](./hardtime.lua) - a taskmaster for bad habits
+
 ## Look and feel
 
 - [Snacks](./snacks.lua)
