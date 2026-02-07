@@ -26,6 +26,7 @@ end, { desc = "parse yaml" })
 
 -- save and exit
 vim.keymap.set("n", "<D-s>", "<cmd>w<cr>", { desc = "save" })
+vim.keymap.set("i", "<D-s>", "<esc><cmd>w<cr>", { desc = "save" })
 vim.keymap.set("n", "<D-x>", function()
   require("snacks").bufdelete()
 end, { desc = "close buffer" })
