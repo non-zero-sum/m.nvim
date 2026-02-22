@@ -62,8 +62,7 @@ The following extras have been installed via `LazyExtras`:
 - [kulala](./kulala.lua) - provides http client (via curl). Keys prefixed to `<localleader>r`
 - [`oklch` color picker](./oklch-color-picker.lua) - a colour picker and in-line preview for CSS colours
 - [`jq`](./jq.lua) - a `jq` interface for parsing large `json` files
-- [live-preview](./live-preview.lua) - provides browser preview for HTML (incl. CSS & JavaScript), and Markdown
 
 ## Disabled plugins
 
-- `markdown-preview` - prefer `live-preview`
+- `markdown-preview`
