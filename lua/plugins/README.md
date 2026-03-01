@@ -13,7 +13,6 @@ Each plugin configuration is in its own file to avoid accidental duplication.
 - [Snacks](./snacks.lua)
   - removes unused options from the default LazyVim splash
   - adds the `m-` header to the splash
-  - sets explorer to show hidden and ignored files by default
 - [TokyoNight](./tokyonight.lua) - sets the style to `night` and adds transparency
 - [render-markdown](./render-markdown.lua) - sets rendering on for checkboxes
 - [TODO comments](./todo-comments.lua) - sets highlighting on even when TODO is not in a comment

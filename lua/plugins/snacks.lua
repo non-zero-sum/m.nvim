@@ -4,12 +4,12 @@ return {
     picker = {
       sources = {
         explorer = {
-          hidden = true,
-          ignored = true,
+          hidden = false,
+          ignored = false,
         },
         files = {
-          hidden = true, -- show dotfiles in fuzzy finder
-          ignored = true, -- optional: show gitignored files
+          hidden = false, -- show dotfiles in fuzzy finder
+          ignored = false, -- optional: show gitignored files
         },
       },
     },
