@@ -20,7 +20,10 @@ vim.keymap.set("n", "<leader>cc", ":CccConvert<cr>", { desc = "Cycle colorspace"
 vim.keymap.set("n", "<leader>jq", function()
   require("jq").run()
 end, { desc = "parse json" })
-vim.keymap.set("n", "<leader>yq", function()
+vim.keymap.set("n", "<leader>js", function()
+  require("jq").run({ commands = { { command = "jq", filetype = "json", arguments = "--slurp" } } })
+end, { desc = "parse ndjson (slurp)" })
+vim.keymap.set("n", "<leader>jy", function()
   require("jq").run({ commands = { { command = "yq", filetype = "yaml", arguments = "-r" } } })
 end, { desc = "parse yaml" })
 
