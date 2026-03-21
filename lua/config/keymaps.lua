@@ -36,3 +36,4 @@ end, { desc = "close buffer" })
 
 -- sent changed content to the black hole register
 vim.keymap.set("n", "c", '"_c')
+vim.keymap.set("n", "C", '"_C')
