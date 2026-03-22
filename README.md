@@ -59,7 +59,11 @@ Each plugin configuration is in its own file to avoid accidental duplication.
   - adds the `m-` header to the splash
 - [TokyoNight](./lua/plugins/tokyonight.lua) - sets the style to `night` and adds transparency
 - [render-markdown](./lua/plugins/render-markdown.lua) - sets rendering on for checkboxes
-- [TODO comments](./lua/plugins/todo-comments.lua) - sets highlighting on even when Tlua/plugins/ODO is not in a comment
+
+- [TODO comments](./lua/plugins/todo-comments.lua) - sets highlighting (with custom colours) for my ideation workflow including
+  - TASK, OBJECTIVE, DECISION, QUESTION, CHOICE
+  - IDEA, NOTE
+  - DONE, OBJECTIVE-MET, DECISION-MADE, QUESTION-ANSWERED
 
 ### Language support
 
