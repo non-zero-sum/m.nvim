@@ -17,6 +17,7 @@ vim.keymap.set("v", "˚", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>g
 vim.keymap.set("n", "<leader>cc", ":CccConvert<cr>", { desc = "Cycle colorspace" })
 
 -- jq and yq
+vim.keymap.set("n", "<leader>j", "", { desc = "+jq" })
 vim.keymap.set("n", "<leader>jq", function()
   require("jq").run()
 end, { desc = "parse json" })
