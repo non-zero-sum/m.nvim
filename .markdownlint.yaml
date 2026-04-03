@@ -6,6 +6,8 @@ MD007:
   # don't indent the fist level of lists
   start_indented: false
 MD013: false
+MD024:
+  siblings_only: true
 MD029:
   #ordered list style
   style: ordered
