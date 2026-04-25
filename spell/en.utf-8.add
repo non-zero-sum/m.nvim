@@ -7,11 +7,9 @@ nvim
 linter
 lspconfig
 treesitter
-Config
 configs
 config
 kulala
-Talos
 talos
 MetalLB
 Kubernetes
@@ -21,3 +19,8 @@ CoreDNS
 neotest
 async
 LSP
+TODO
+ad-hoc
+JIRA
+Atlassian
+wellbeing
