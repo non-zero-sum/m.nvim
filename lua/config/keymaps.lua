@@ -38,3 +38,8 @@ end, { desc = "close buffer" })
 -- sent changed content to the black hole register
 vim.keymap.set("n", "c", '"_c')
 vim.keymap.set("n", "C", '"_C')
+
+-- Add quote to selected lines in normal mode
+vim.keymap.set("n", "<leader>'", "I> <esc>", { desc = "quote" })
+-- trim markdown to keep it under 80 characters
+vim.keymap.set("n", "<leader>8", "gggwG", { desc = "format markdown paragraph" })
