@@ -39,7 +39,25 @@ end, { desc = "close buffer" })
 vim.keymap.set("n", "c", '"_c')
 vim.keymap.set("n", "C", '"_C')
 
+-- dissable marcro recording
+vim.keymap.set("n", "q", "<Nop>", { noremap = true, silent = true })
+vim.keymap.set("n", "Q", "<Nop>", { noremap = true, silent = true })
+--
+-- markdown
+vim.keymap.set("n", "<leader>mq", "I> <esc>", { desc = "make line markdown quote" })
+vim.keymap.set("n", "<leader>mt", ":Mtoc insert<cr>dd")
+
 -- Add quote to selected lines in normal mode
-vim.keymap.set("n", "<leader>'", "I> <esc>", { desc = "quote" })
+vim.keymap.set("n", "gsq", 'gsaiw"', { remap = true, desc = "surround with quotes" })
+vim.keymap.set("n", "gsb", "gsaiw)", { remap = true, desc = "surroung with ()" })
+vim.keymap.set("n", "gsc", "gsaiw}", { remap = true, desc = "surround with {}" })
+vim.keymap.set("n", "gss", "gsaiw]", { remap = true, desc = "surround with []" })
+vim.keymap.set("n", "gst", "gsaiw`", { remap = true, desc = "surround with backticks" })
+vim.keymap.set("n", "gsl", "gsaiw]/]<cr>a()<esc>i", { remap = true, desc = "surround with backticks" })
+
 -- trim markdown to keep it under 80 characters
-vim.keymap.set("n", "<leader>8", "gggwG", { desc = "format markdown paragraph" })
+vim.keymap.set("n", "<leader>88", "gw}", { desc = "format markdown paragraph" })
+vim.keymap.set("n", "<leader>89", "gwG", { desc = "format markdown to end of doc" })
+vim.keymap.set("n", "<leader>80", "gggwG", { desc = "format markdown paragraph" })
+
+vim.keymap.set("n", "-", "$l", { desc = "move to the end of the line" })
