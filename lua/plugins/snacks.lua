@@ -1,6 +1,10 @@
 return {
   "snacks.nvim",
   opts = {
+    styles = {
+      terminal = { position = "right" },
+      laxygit = { position = "float", height = 0.6, width = 0.75, zindex = 50 },
+    },
     picker = {
       sources = {
         explorer = {
