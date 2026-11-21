@@ -12,8 +12,9 @@ return {
       },
     },
     formatters_by_ft = {
-      ["markdown"] = { "markdownlint-cli2", "markdown-toc" },
-      ["markdown.mdx"] = { "markdownlint-cli2", "markdown-toc" },
+      markdown = { "markdownlint-cli2", "markdown-toc" },
+      xml = { "xmlformatter" },
+      rust = { "rustfmt", lsp_format = "fallback" },
     },
   },
 }

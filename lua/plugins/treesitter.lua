@@ -3,6 +3,8 @@ return {
   opts = {
     ensure_installed = {
       "bash",
+      "rust",
+      "ron",
       "html",
       "graphql",
       "javascript",
